@@ -1,9 +1,4 @@
-import {
-  FileText,
-  Calendar,
-  Clock,
-  MessageSquare,
-} from "lucide-react";
+import {Calendar, Clock, FileText, MessageSquare,} from "lucide-react";
 
 const WorkCard = ({ item }) => {
   return (

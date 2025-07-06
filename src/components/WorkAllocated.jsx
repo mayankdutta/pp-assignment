@@ -1,7 +1,7 @@
-import { workItems, workTabs } from "../utils.jsx";
 import Card from "./Card.jsx";
-import { useState } from "react";
-import WorkCard from "./WorkCard.jsx";
+import {useState} from "react";
+import WorkCard from "./workCard.jsx";
+import {workItems, workTabs} from "../utils.jsx";
 import InputSelect from "../common/inputSelect.jsx";
 
 const WorkAllocated = () => {
