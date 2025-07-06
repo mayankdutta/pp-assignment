@@ -77,19 +77,19 @@ const Sidebar = () => {
       </nav>
 
       {/* User Profile */}
-      {!sidebarCollapsed && (
-        <div className="p-4 border-t border-gray-200">
-          <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
-            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">
-              A
-            </div>
+      <div className="p-4 border-t border-gray-200">
+        <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+          <div className="w-7 h-6 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold text-xs">
+            A
+          </div>
+          {!sidebarCollapsed && (
             <div className="flex-1">
               <div className="font-medium text-sm">Ajay</div>
               <div className="text-xs text-gray-500">Manager</div>
             </div>
-          </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   );
 };

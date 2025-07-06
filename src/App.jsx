@@ -15,7 +15,7 @@ const TaskDashboard = () => {
   return (
     <>
       <NavigationBar />
-      <div className="flex h-screen bg-gray-50">
+      <div className="flex h-[calc(100vh-8.2vh)] bg-gray-50">
         <Sidebar />
 
         <div className="flex-1 overflow-hidden flex flex-col">
