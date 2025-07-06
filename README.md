@@ -1,12 +1,33 @@
-# React + Vite
+# Assignment 
+## Tech stack 
+- React
+- Vite
+- Tailwind CSS (for styling)
+- lucid react (for icons)
+- recharts (for bar chart)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instructions to run 
+- Clone into your local `git clone https://github.com/mayankdutta/pp-assignment.git`
+- Do `npm i`
+- Do `npm run dev`
+- Open `localhost:5173`
 
-Currently, two official plugins are available:
+## Tools used 
+- Claude to have a working base prepared
+- Vim to code/fix UI issues & modularizing code.
+- Tailwind docs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## AI tools
+- Claude
 
-## Expanding the ESLint configuration
+## Time taken 
+- 6-7 hrs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requirements fulfillment
+| Requirement | Status | 
+| -- | -- |
+| Pixel-perfect UI matching Figma | ✅ |
+| Responsive design (desktop & mobile) | ✅ |
+| Modular component structure | ✅ |
+| Use of chosen CSS framework (Tailwind / Bootstrap / LESS / SASS) | ✅, Tailwind |
+| (Optional but preferred) AI-assisted coding workflows | ✅, Claude |
