@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "./layouts/sidebar";
-import Section from "./components/Section";
 import { statsCards } from "./utils";
 import NavigationBar from "./components/navigationBar";
 import PersonalNotepad from "./components/PersonalNotepad";
@@ -9,6 +8,8 @@ import Workflows from "./components/Workflows";
 import OverdueTasks from "./components/OverdueTasks";
 import WorkAllocated from "./components/WorkAllocated";
 import { EmployeeProgress } from "./components/employeeProgress";
+import { PanelsTopLeft } from "lucide-react";
+import StatusCard from "./components/statusCard";
 
 const TaskDashboard = () => {
   return (
@@ -23,12 +24,17 @@ const TaskDashboard = () => {
               <h1 className="text-2xl font-semibold text-gray-800">
                 Good Evening ! Ajay
               </h1>
-              <button className="text-blue-600 hover:text-blue-800 text-sm font-medium transition-colors cursor-pointer">
+              <button className="text-gray-600 hover:text-gray-800 text-xs font-medium sm:font-small md:font-small transition-colors cursor-pointer flex items-center gap-x-2 border-2 border-gray-300 p-1 rounded-xl">
+                <PanelsTopLeft />
                 Add Widget
               </button>
             </div>
 
-            <Section type="STATUS" data={statsCards} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+              {statsCards.map((card) => (
+                <StatusCard card={card} />
+              ))}
+            </div>
 
             <WorkAllocated />
             <EmployeeProgress />

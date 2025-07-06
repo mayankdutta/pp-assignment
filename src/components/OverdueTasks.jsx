@@ -1,6 +1,7 @@
-import { ExternalLink, Badge, UserPlus } from "lucide-react";
+import { UserPlus } from "lucide-react";
 import Card from "./Card";
 import { tasks } from "../utils";
+import InputSelect from "../common/inputSelect";
 
 const OverdueTasks = () => {
   return (
@@ -8,10 +9,9 @@ const OverdueTasks = () => {
       title="Overdue tasks"
       actions={
         <>
-          <Badge variant="error">10</Badge>
-          <button className="p-1 text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded transition-colors">
-            <ExternalLink size={16} />
-          </button>
+          <InputSelect
+            options={["Select Task", "Option 1", "Option 2"]}
+          />
         </>
       }
     >
@@ -45,7 +45,9 @@ const OverdueTasks = () => {
                   {task.assignedTo}
                 </td>
                 <td className="py-4 px-4 hidden md:table-cell">
-                  <Badge variant="overdue">Overdue</Badge>
+                  <button class="rounded-full bg-gray-500 text-xs p-2 bg-orange-200 color-orange-400 border-1 border-orange-400">
+                    Overdue
+                  </button>
                 </td>
                 <td className="py-3 px-4 text-sm text-gray-900 hidden lg:table-cell">
                   {task.dueDate}

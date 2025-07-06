@@ -1,8 +1,8 @@
 import { workItems, workTabs } from "../utils.jsx";
 import Card from "./Card.jsx";
-import { ExternalLink } from "lucide-react";
 import { useState } from "react";
 import WorkCard from "./WorkCard.jsx";
+import InputSelect from "../common/inputSelect.jsx";
 
 const WorkAllocated = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -11,9 +11,9 @@ const WorkAllocated = () => {
       title="Work Allocated"
       actions={
         <>
-          <select className="text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
-            <option>Select Employee</option>
-          </select>
+          <InputSelect
+            options={["Select Work", "Option 1", "Option 2"]}
+          />
         </>
       }
       tabs={workTabs}

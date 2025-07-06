@@ -55,25 +55,31 @@ const NavigationBar = () => {
             <Bell size={20} />
           </button>
 
-          {/* Date */}
-          <div className="text-sm text-gray-600 font-medium">24-03-2001</div>
+          <div className="p-2 bg-gray-200 rounded-lg flex items-center gap-x-2">
+            {/* Date */}
+            <div className="text-sm text-gray-600 font-medium bg-gray-200">
+              24-03-2001
+            </div>
 
-          {/* Calendar icon */}
-          <button className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">
-            <Calendar size={20} />
-          </button>
-
-          {/* Grid icon */}
-          <button className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">
-            <Grid3X3 size={20} />
-          </button>
-
-          {/* User dropdown */}
-          <div className="flex items-center space-x-2">
-            <button className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors">
-              <span className="font-medium">Outlet name</span>
-              <ChevronDown size={16} />
+            {/* Calendar icon */}
+            <button className=" text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Calendar size={20} />
             </button>
+          </div>
+
+          <div className="bg-gray-200 p-2 rounded-lg flex items-center gap-x-2">
+            {/* Grid icon */}
+            <button className=" text-gray-400 hover:text-gray-600 hover:bg-gray-50 rounded-lg transition-colors">
+              <Grid3X3 size={20} />
+            </button>
+
+            {/* User dropdown */}
+            <div className="flex items-center space-x-2">
+              <button className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors ">
+                <span className="font-medium text-sm">Outlet name</span>
+                <ChevronDown size={16} />
+              </button>
+            </div>
           </div>
 
           {/* Create button */}

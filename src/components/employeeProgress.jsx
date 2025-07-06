@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { employeeTabs } from "../utils";
-import { employeeData } from "../utils";
 import Card from "./Card";
+import InputSelect from "../common/inputSelect";
+
+import { useState } from "react";
+import { employeeTabs, employeeData } from "../utils";
 
 export const EmployeeProgressRows = ({ employee }) => {
   return (
@@ -25,9 +26,9 @@ export const EmployeeProgress = () => {
       title="Employee Wise Progress"
       actions={
         <>
-          <select className="text-sm border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
-            <option>Select Employee</option>
-          </select>
+          <InputSelect
+            options={["Select Employee", "Option 1", "Option 2"]}
+          />
         </>
       }
       tabs={employeeTabs}

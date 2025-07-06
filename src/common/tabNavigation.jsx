@@ -12,7 +12,7 @@ const TabNavigation = ({ tabs, activeTab, setActiveTab }) => {
           }`}
         >
           <div className={`w-3 h-3 rounded-full ${tab.color}`}></div>
-          <span className="text-sm font-medium">
+          <span className="text-xs font-medium">
             {tab.label} {tab.count}
           </span>
         </button>

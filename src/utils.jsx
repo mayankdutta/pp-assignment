@@ -34,9 +34,9 @@ export const employeeData = [
 ];
 
 export const employeeTabs = [
-  { key: "tasks", label: "Tasks", count: 10, color: "bg-green-500" },
-  { key: "issues", label: "Issues", count: 10, color: "bg-orange-500" },
-  { key: "workflows", label: "Workflows", count: 10, color: "bg-purple-500" },
+  { key: 0, label: "Tasks", count: 10, color: "bg-green-500" },
+  { key: 1, label: "Issues", count: 10, color: "bg-orange-500" },
+  { key: 2, label: "Workflows", count: 10, color: "bg-purple-500" },
 ];
 
 export const statsCards = [
@@ -75,9 +75,9 @@ export const statsCards = [
 ];
 
 export const workTabs = [
-  { key: "tasks", label: "Tasks", count: 10, color: "bg-green-500" },
-  { key: "issues", label: "Issues", count: 10, color: "bg-orange-500" },
-  { key: "forms", label: "Forms", count: 10, color: "bg-purple-500" },
+  { key: 0, label: "Tasks", count: 10, color: "bg-green-500" },
+  { key: 1, label: "Issues", count: 10, color: "bg-orange-500" },
+  { key: 2, label: "Forms", count: 10, color: "bg-purple-500" },
 ];
 
 export const workItems = [
@@ -254,7 +254,6 @@ export const workflowsData = [
   },
 ];
 
-
 export const notesData = [
   {
     id: 1,
@@ -268,7 +267,7 @@ export const notesData = [
     title: "Menu correction",
     description:
       "Update the menu to show the dishes and their ingredients clearly. Point out any new cooking methods or dietary options.",
-    completed: false,
+    completed: true,
   },
 ];
 export const tasks = [
@@ -300,4 +299,12 @@ export const tasks = [
     status: "overdue",
     dueDate: "11-06-2025",
   },
+];
+
+export const departmentAllocationData = [
+  { department: "Dept 1", tasks: 10, overdueTasks: 5, total: 15 },
+  { department: "Dept 2", tasks: 30, overdueTasks: 6, total: 36 },
+  { department: "Dept 3", tasks: 38, overdueTasks: 20, total: 58 },
+  { department: "Dept 4", tasks: 73, overdueTasks: 20, total: 93 },
+  { department: "Dept 5", tasks: 72, overdueTasks: 23, total: 95 },
 ];
