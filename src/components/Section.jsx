@@ -1,4 +1,4 @@
-import { WorkCard } from "./workCard";
+import WorkCard  from "./WorkCard";
 import { Ellipsis, ExternalLink } from "lucide-react";
 import TabNavigation from "../common/tabNavigation";
 import { EmployeeProgress } from "./employeeProgress";
@@ -10,7 +10,7 @@ const DISPLAY_TYPE = {
   CARDS: "CARDS",
 };
 
-const Section = ({ type, title, activeTab, setActiveTab, tabs, data }) => {
+const Section = ({ type, title, activeTab, setActiveTab, tabs, data, tableHeaders }) => {
   if (type === "STATUS") {
     return (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
@@ -64,24 +64,13 @@ const Section = ({ type, title, activeTab, setActiveTab, tabs, data }) => {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-gray-200 bg-gray-200">
-                  <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
-                    Name
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
-                    Department
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
-                    Assigned
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
-                    Ongoing
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
-                    Overdue
-                  </th>
-                  <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
-                    Completed
-                  </th>
+                  {tableHeaders.map(
+                    (item) => (
+                      <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">
+                        {item}
+                      </th>
+                    )
+                  )}
                 </tr>
               </thead>
               <tbody>

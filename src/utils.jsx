@@ -222,3 +222,82 @@ export const workItems = [
     assignee: "A",
   },
 ];
+
+export const workflowsData = [
+  {
+    id: 1,
+    title: "Stock Control Strategies",
+    responses: 47,
+    tasks: 22,
+    status: "active",
+  },
+  {
+    id: 2,
+    title: "How to Handle Inventory",
+    responses: 23,
+    tasks: 15,
+    status: "active",
+  },
+  {
+    id: 3,
+    title: "Inventory Management Tips",
+    responses: 56,
+    tasks: 30,
+    status: "active",
+  },
+  {
+    id: 4,
+    title: "Managing Your Stock Effectively",
+    responses: 89,
+    tasks: 5,
+    status: "active",
+  },
+];
+
+
+export const notesData = [
+  {
+    id: 1,
+    title: "Make shift & assign",
+    description:
+      "Assign individuals to specific shifts based on availability and role requirements",
+    completed: false,
+  },
+  {
+    id: 2,
+    title: "Menu correction",
+    description:
+      "Update the menu to show the dishes and their ingredients clearly. Point out any new cooking methods or dietary options.",
+    completed: false,
+  },
+];
+export const tasks = [
+  {
+    id: 1,
+    name: "Menu Planning",
+    assignedTo: "Ajay",
+    status: "overdue",
+    dueDate: "12-07-2024",
+  },
+  {
+    id: 2,
+    name: "Staff Scheduling",
+    assignedTo: "Niraj",
+    status: "overdue",
+    dueDate: "01-08-2023",
+  },
+  {
+    id: 3,
+    name: "Inventory management",
+    assignedTo: "Vijay",
+    status: "overdue",
+    dueDate: "02-09-2022",
+  },
+  {
+    id: 4,
+    name: "Customer Feedback Anal...",
+    assignedTo: "Arvind",
+    status: "overdue",
+    dueDate: "11-06-2025",
+  },
+];

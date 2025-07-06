@@ -5,7 +5,7 @@ import {
   MessageSquare,
 } from "lucide-react";
 
-export const WorkCard = ({ item }) => {
+const WorkCard = ({ item }) => {
   return (
     <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between mb-3">
@@ -45,3 +45,5 @@ export const WorkCard = ({ item }) => {
     </div>
   );
 };
+
+export default WorkCard;

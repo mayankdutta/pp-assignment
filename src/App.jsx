@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidebar from "./layouts/sidebar";
 import Section from "./components/Section";
-import {
-  employeeData,
-  employeeTabs,
-  statsCards,
-  workItems,
-  workTabs,
-} from "./utils";
+import { statsCards } from "./utils";
 import NavigationBar from "./components/navigationBar";
+import PersonalNotepad from "./components/PersonalNotepad";
+import DepartmentAllocation from "./components/DepartmentWiseAllocation";
+import Workflows from "./components/Workflows";
+import OverdueTasks from "./components/OverdueTasks";
+import WorkAllocated from "./components/WorkAllocated";
+import { EmployeeProgress } from "./components/employeeProgress";
 
 const TaskDashboard = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
   return (
     <>
       <NavigationBar />
@@ -32,23 +30,14 @@ const TaskDashboard = () => {
 
             <Section type="STATUS" data={statsCards} />
 
-            <Section
-              type="CARDS"
-              title="Work Allocated"
-              data={workItems}
-              tabs={workTabs}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-
-            <Section
-              type="TABLE"
-              title="Employee Wise Progress"
-              data={employeeData}
-              tabs={employeeTabs}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <WorkAllocated />
+            <EmployeeProgress />
+            <div className="grid gap-4 mb-6 grid-cols-1 lg:grid-cols-2">
+              <Workflows />
+              <OverdueTasks />
+              <PersonalNotepad />
+              <DepartmentAllocation />
+            </div>
           </main>
         </div>
       </div>
