@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`${sidebarCollapsed ? "w-16" : "w-64"} transition-all duration-300 bg-white shadow-sm border-r border-gray-200 flex flex-col`}
+      className={`${sidebarCollapsed ? "w-20" : "w-64"} transition-all duration-300 bg-white shadow-sm border-r border-gray-200 flex flex-col`}
     >
       {/* Logo Section */}
       <div className="p-4 border-b border-gray-200">
