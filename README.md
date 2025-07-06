@@ -1,4 +1,5 @@
 # Assignment 
+Deployed: click [here](https://pp-assignment-iota.vercel.app/)
 ## Tech stack 
 - React
 - Vite
